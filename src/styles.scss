@@ -1,4 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+$dark: #302718;
+$gold: #c7ab59;
+$sand: #ded2a8;
+$white: #ffffff;
+$green: #699e3c;
+
+@font-face {
+  font-family: MoonTime-Regular;
+  src: url("/assets/fonts/MoonTime-Regular.otf") format('opentype');
+}
+
+@font-face {
+  font-family: Montserrat-Black;
+  src: url("/assets/fonts/Montserrat-Black.ttf") format('opentype');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("/assets/fonts/Montserrat-Bold.ttf") format('opentype');
+}
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("/assets/fonts/Montserrat-Light.ttf") format('opentype');
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format('opentype');
+}
 
 /* default .loading styles, .loading should be invisible, opacity: 0, z-index: -1 */
 .loading {
@@ -9,11 +40,50 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: #000;
+  background: #fff;
   z-index: -1;
 }
 /* .loading screen is visible when app is not bootstrapped yet, my-app is empty */
 app-root:empty + .loading {
   opacity: 1;
   z-index: 100;
+  background: #000;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Montserrat-Regular, "Helvetica Neue", sans-serif; }
+
+.mat-form-field-empty.mat-form-field-label {
+  color: $dark;
+}
+
+.mat-form-field-underline {
+  background-color: $dark;
+}
+
+/* input color class */
+input.mat-input-element {
+  color: $dark;
+}
+
+/* Change label color on focused */
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: $gold !important;
+}
+
+/* underline border color on focused */
+.mat-focused .mat-form-field-underline .mat-form-field-ripple{
+  background-color: $gold !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: $gold !important;
+}
+
+.mat-select-value {
+  color: $dark !important;
+}
+
+.mat-select-arrow {
+  color: $gold !important;
 }

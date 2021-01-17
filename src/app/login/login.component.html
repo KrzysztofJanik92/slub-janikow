@@ -1,0 +1,36 @@
+<div class="container">
+  <form class="left" [formGroup]="fg">
+    <div class="login-container">
+      <div class="label-container">
+        <mat-label class="label" [@valueChanged]="label">{{label}}</mat-label>
+      </div>
+      <mat-form-field class="input-container">
+        <mat-select placeholder="Użytkownik" formControlName="name">
+          <mat-option *ngFor="let guest of guests" (click)="selectUser(guest)" [value]="guest">
+            {{guest.name}} {{guest.surname}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="password-container">
+        <mat-form-field class="input-container">
+          <input matInput placeholder="Hasło" type="password" formControlName="password" >
+        </mat-form-field>
+
+        <div class="button-container">
+          <button type="submit"
+                  mat-raised-button
+                  (click)="login()"
+                  class="button"
+                  [disabled]="!fg.valid"
+          >Zaloguj się</button>
+        </div>
+
+        <div class="button-test">
+          <span>Login</span>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="right"></div>
+</div>
