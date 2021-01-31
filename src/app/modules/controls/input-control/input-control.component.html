@@ -1,0 +1,18 @@
+<mat-form-field [class]="inputClass" appearance="legacy" [floatLabel]="floatLabel">
+  <mat-label>{{label}} {{asterisk ? '*' : ''}}</mat-label>
+  <span matPrefix *ngIf="prefix">{{prefix}} &nbsp;</span>
+  <input matInput
+         [type]="controlType"
+         [min]="min"
+         [max]="max"
+         [formControl]="control"
+         [readonly]="readOnly"
+         placeholder="{{placeholder}}"
+  >
+  <button mat-button *ngIf="control.value && !control.disabled && !readOnly" matSuffix mat-icon-button aria-label="Clear" (click)="clearValue()">
+    <mat-icon>close</mat-icon>
+  </button>
+<!--  <mat-error *ngIf="control.touched && control.invalid && control.errors">-->
+<!--    {{control.errors | formError}}-->
+<!--  </mat-error>-->
+</mat-form-field>

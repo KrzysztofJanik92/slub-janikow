@@ -1,4 +1,4 @@
-@import "../../styles.scss";
+@import "../../../styles";
 
 .container {
   width: 100%;
@@ -22,7 +22,7 @@
 }
 
 .right {
-  background-image: url("../../assets/images/photo2-683x1024.jpg");
+  background-image: url("../../../assets/images/photo2-683x1024.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -65,7 +65,7 @@
 }
 
 .button-test {
-  background: url("../../assets/images/btn-bg3.png") center center no-repeat;
+  background: url("../../../assets/images/btn-bg3.png") center center no-repeat;
   position: relative;
   cursor: pointer;
 
@@ -75,5 +75,14 @@
     z-index: 2;
     position: relative;
     left: 122px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .left {
+    width: 100%;
+  }
+  .right {
+    display: none;
   }
 }

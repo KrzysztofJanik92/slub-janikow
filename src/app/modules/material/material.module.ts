@@ -16,7 +16,7 @@ import {MatSelectModule} from "@angular/material/select";
     MatIconModule,
     MatButtonModule,
     MatButtonToggleModule,
-    MatSelectModule
+    MatSelectModule,
   ]
 })
 export class MaterialModule {

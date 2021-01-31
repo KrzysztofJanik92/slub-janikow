@@ -1,0 +1,18 @@
+<mat-form-field [class]="inputClass" appearance="legacy" [floatLabel]="floatLabel" *ngIf="control && values">
+  <mat-label>{{label}} {{asterisk ? '*' : ''}}</mat-label>
+  <span matPrefix *ngIf="prefix">{{prefix}} &nbsp;</span>
+  <mat-select [formControl]="control" placeholder="{{placeholder}}" [multiple]="multiSelect">
+    <mat-option
+      *ngFor="let i of values"
+      [value]="i[valueKey]"
+      (click)="emitSelectedValue(i)"
+      [disabled]="disableAddingNextValue(matOption.selected)"
+      #matOption
+    >
+      {{i[viewValueKey]}}
+    </mat-option>
+  </mat-select>
+<!--  <mat-error *ngIf="control?.touched && control?.invalid && control?.errors">-->
+<!--    {{control.errors | formError}}-->
+<!--  </mat-error>-->
+</mat-form-field>
