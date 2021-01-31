@@ -2,6 +2,13 @@ import {User} from "../models/user.model";
 
 export const guests: User[] = [
   {
+    id: 1000,
+    name: 'Admin',
+    surname: 'Adminowski',
+    password: 'admin123!',
+    greetings: 'Witamy szanownego Pana Admina'
+  },
+  {
     id: 1001,
     name: 'Paula',
     surname: 'Józefowicz',

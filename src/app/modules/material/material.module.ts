@@ -6,6 +6,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatSelectModule} from "@angular/material/select";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 @NgModule({
   exports: [
@@ -17,6 +18,7 @@ import {MatSelectModule} from "@angular/material/select";
     MatButtonModule,
     MatButtonToggleModule,
     MatSelectModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule {
