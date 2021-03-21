@@ -5,3 +5,12 @@
 .inner-content {
   padding: 0 16%;
 }
+
+img {
+  //max-height: 100%;
+  max-width: 100%;
+}
+
+.blur {
+  filter: blur(10px);
+}

@@ -36,22 +36,44 @@ $green: #699e3c;
   opacity: 0;
   transition: opacity .8s ease-in-out;
   position: fixed;
-  height: 100%;
-  width: 100%;
   top: 0;
   left: 0;
-  background: #000;
+  background: #fff;
   z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .names {
+    font-family: MoonTime-Regular;
+    font-size: 100px;
+    margin: 32px 0 0 0;
+    transition: .3s;
+    color: white;
+  }
 }
+
 /* .loading screen is visible when app is not bootstrapped yet, my-app is empty */
 app-root:empty + .loading {
   opacity: 1;
   z-index: 100;
   background: #fff;
+
+  .names {
+    color: rgba($gold, .76);
+  }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Montserrat-Regular, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat-Regular, "Helvetica Neue", sans-serif;
+}
 
 .mat-form-field-empty.mat-form-field-label {
   color: $dark;
@@ -72,7 +94,7 @@ input.mat-input-element {
 }
 
 /* underline border color on focused */
-.mat-focused .mat-form-field-underline .mat-form-field-ripple{
+.mat-focused .mat-form-field-underline .mat-form-field-ripple {
   background-color: $gold !important;
 }
 
@@ -86,4 +108,17 @@ input.mat-input-element {
 
 .mat-select-arrow {
   color: $gold !important;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba($gold, 0.44);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba($gold, .56);
+  outline: none;
 }

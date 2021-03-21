@@ -1,6 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterEvent} from '@angular/router';
-import {debounceTime, filter, tap} from 'rxjs/operators';
+import {debounceTime, filter, skip, tap} from 'rxjs/operators';
 import {Event} from '@angular/router';
 
 @Component({
@@ -42,6 +42,7 @@ export class AppComponent implements OnInit {
   private loaderOnRouteChange(delay: number) {
     this.router.events
       .pipe(
+        skip(1),
         tap(() => this.loading = true),
         filter(event => this.filterEvents(event)),
         debounceTime(delay)
