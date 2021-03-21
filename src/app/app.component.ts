@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   hiddenScrollbar = false;
   loading: boolean;
   desktopWidth: number;
+  route: string;
 
   @HostListener('window:resize', ['$event'])
   onResizeBrowser(event?) {
@@ -28,7 +29,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.router.events.subscribe(event => {
+      console.log(event);
       if (event instanceof NavigationEnd) {
+        this.route = event?.url;
         this.showShell = this.activatedRoute.firstChild.snapshot.data.showShell !== false;
         this.hiddenScrollbar = this.activatedRoute.firstChild.snapshot.data.hiddenScrollbar === true;
       }
