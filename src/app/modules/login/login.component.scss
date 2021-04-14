@@ -65,7 +65,7 @@
   display: none;
 }
 
-.button-test {
+.fancy-button-cover {
   background: url("../../../assets/images/btn-bg3.png") center center no-repeat;
   position: relative;
   cursor: pointer;
@@ -75,7 +75,9 @@
     font-size: 42px;
     z-index: 2;
     position: relative;
-    left: 122px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -94,4 +96,41 @@
   //.right {
   //  display: none;
   //}
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: portrait) {
+  .left {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+
+  .login-container {
+    width: 100%;
+    padding: 48px 32px;
+  }
+
+  .input-container {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .label-container {
+    justify-content: center;
+  }
+
+  .label {
+    font-size: 56px;
+  }
+}
+
+@media only screen and (max-device-width: 568px) and (orientation: portrait) {
+  .label {
+    font-size: 44px;
+  }
+
+  .fancy-button-cover {
+    transform: scale(.65);
+  }
 }
