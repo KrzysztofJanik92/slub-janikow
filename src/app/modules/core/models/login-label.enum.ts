@@ -1,4 +1,4 @@
 export enum LoginLabelEnum {
-  CHOOSE_USER = 'Choose username',
-  ENTER_PASSWORD = 'Enter the password'
+  CHOOSE_USER = 'login.chooseUsername',
+  ENTER_PASSWORD = 'login.enterPassword'
 }

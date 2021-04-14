@@ -1,0 +1,13 @@
+{
+  "login": {
+    "chooseUsername": "Choose username",
+    "enterPassword": "Enter the password"
+  },
+  "navbar": {
+    "mainPage": "Home",
+    "about": "About us",
+    "photos": "Photos",
+    "contact": "Contact",
+    "logout": "Log out"
+  }
+}

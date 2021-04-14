@@ -1,0 +1,13 @@
+{
+  "login": {
+    "chooseUsername": "Wybierz użytkownika",
+    "enterPassword": "Wpisz hasło"
+  },
+  "navbar": {
+    "mainPage": "Strona główna",
+    "about": "O nas",
+    "photos": "Zdjęcia",
+    "contact": "Kontakt",
+    "logout": "Wyloguj się"
+  }
+}

@@ -1,19 +1,19 @@
 <div class="container">
   <div class="item" routerLink="/home" [routerLinkActive]="'active'">
-    Home
+    {{'navbar.mainPage' | translate}}
   </div>
   <div class="item" routerLink="/about" [routerLinkActive]="'active'">
-    About us
+    {{'navbar.about' | translate}}
   </div>
   <div class="item" routerLink="/photos" [routerLinkActive]="'active'">
-    Photos
+    {{'navbar.photos' | translate}}
   </div>
   <div class="item" routerLink="/contact" [routerLinkActive]="'active'">
-    Contact
+    {{'navbar.contact' | translate}}
   </div>
   <div >
     <button (click)="logout()" class="logout">
-      <span class="item">Log Out</span>
+      <span class="item">{{'navbar.logout' | translate}}</span>
     </button>
   </div>
 </div>

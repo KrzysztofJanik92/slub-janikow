@@ -2,6 +2,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterEvent} from '@angular/router';
 import {debounceTime, filter, skip, tap} from 'rxjs/operators';
 import {Event} from '@angular/router';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -22,9 +23,12 @@ export class AppComponent implements OnInit {
   }
 
   constructor(private router: Router,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,
+              private translate: TranslateService) {
     this.loaderOnRouteChange(500);
     this.onResizeBrowser();
+    translate.setDefaultLang('en');
+    translate.use('pl');
   }
 
   ngOnInit() {
