@@ -33,6 +33,7 @@
 .password-container {
   display: flex;
   flex-direction: column;
+  transition: all 1s;
 }
 
 .input-container {
@@ -76,6 +77,14 @@
     position: relative;
     left: 122px;
   }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.disable-fill {
+  -webkit-text-security: disc;
 }
 
 @media screen and (max-width: 960px) {

@@ -1,21 +1,37 @@
 <div class="container">
-  <form class="left" [formGroup]="fg">
+  <form class="left" [formGroup]="fg" >
     <div class="login-container">
       <div class="label-container">
         <mat-label class="label" [@valueChanged]="label">{{label}}</mat-label>
       </div>
       <mat-form-field class="input-container">
-        <mat-select placeholder="Użytkownik" formControlName="name">
-          <mat-option *ngFor="let guest of guests" (click)="selectUser(guest)" [value]="guest">
+        <input
+          placeholder="Pick one"
+          aria-label="Number"
+          matInput
+          formControlName="name"
+          [matAutocomplete]="guestAutocomplete">
+        <mat-autocomplete #guestAutocomplete
+                          autoActiveFirstOption
+                          (optionSelected)="selectUser($event)"
+                          [displayWith]="displayProperty">
+          <mat-option *ngFor="let guest of filteredOptions | async" [value]="guest">
             {{guest.name}} {{guest.surname}}
           </mat-option>
-        </mat-select>
+        </mat-autocomplete>
+
+        <mat-error *ngIf="getFormControl('name').hasError('unselectedUser')">
+          Wybierz swoje imię i nazwisko z powyższej listy
+        </mat-error>
       </mat-form-field>
 
-      <div class="password-container">
+      <div class="password-container" [class.hidden]="!currentGuest">
 
         <mat-form-field class="input-container">
-          <input matInput placeholder="Hasło" type="password" formControlName="password" >
+          <input matInput placeholder="Hasło" type="password" formControlName="password">
+          <mat-error *ngIf="getFormControl('password').hasError('incorrectPassword')">
+            Niestety ale hasło jest nieprawidłowe
+          </mat-error>
         </mat-form-field>
 
         <div class="button-container">
@@ -23,11 +39,11 @@
                   mat-raised-button
                   (click)="login()"
                   class="button"
-                  [disabled]="!fg.valid"
-          >Zaloguj się</button>
+          >Zaloguj się
+          </button>
         </div>
 
-        <div class="button-test">
+        <div class="button-test" (click)="login()">
           <span>Login</span>
         </div>
       </div>

@@ -3,6 +3,7 @@ import {BehaviorSubject, Observable} from "rxjs";
 import {Router} from "@angular/router";
 import {User} from "../models/user.model";
 import {guests} from "../guests/guests.const";
+import {AbstractControl} from "@angular/forms";
 
 @Injectable({
   providedIn: 'root'
@@ -21,15 +22,15 @@ export class AuthService {
     return this.currentUserSubject.value;
   }
 
-  login(id: number, password: string) {
+  login(id: number, passwordControl: AbstractControl): void | AbstractControl {
     const user = this.getUser(id);
 
-    if (user.password === password) {
+    if (user.password === passwordControl.value) {
       localStorage.setItem('currentUser', JSON.stringify(user));
       this.currentUserSubject.next(user);
       this.router.navigate(['/home']);
     } else {
-      return 'Błędne hasło!'
+      return passwordControl.setErrors({incorrectPassword: true})
     }
   }
 
