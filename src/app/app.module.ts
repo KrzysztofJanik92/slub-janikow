@@ -12,13 +12,15 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from "@angular/common/http";
 import { LangComponent } from './components/lang/lang.component';
+import { PageUnderConstructionComponent } from './components/page-under-construction/page-under-construction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     TitleComponent,
-    LangComponent
+    LangComponent,
+    PageUnderConstructionComponent
   ],
   imports: [
     BrowserModule,

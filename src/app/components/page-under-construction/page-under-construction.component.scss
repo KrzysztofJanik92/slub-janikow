@@ -1,0 +1,64 @@
+@import "../../../styles";
+
+.left,
+.right {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.right {
+  background-image: url("../../../assets/images/photo2-683x1024.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.notice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: MoonTime-Regular;
+  font-size: 64px;
+  color: $gold;
+  font-weight: 400;
+}
+
+.text {
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  color: $dark;
+  margin: 0;
+  text-align: center;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+.names {
+  font-family: MoonTime-Regular;
+  color: $dark;
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  margin-top: 64px;
+}
+
+@media screen and (orientation: portrait){
+  .right {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+  }
+}

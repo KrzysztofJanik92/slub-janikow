@@ -3,8 +3,6 @@ import {ActivatedRoute, NavigationCancel, NavigationEnd, NavigationError, Naviga
 import {debounceTime, filter, skip, tap} from 'rxjs/operators';
 import {Event} from '@angular/router';
 import {TranslateService} from "@ngx-translate/core";
-import {Environment} from "@angular/compiler-cli/src/ngtsc/typecheck/src/environment";
-import {environment} from "../environments/environment";
 
 @Component({
   selector: 'app-root',
@@ -18,7 +16,6 @@ export class AppComponent implements OnInit {
   loading: boolean;
   desktopWidth: number;
   route: string;
-  production: boolean;
 
   @HostListener('window:resize', ['$event'])
   onResizeBrowser(event?) {
@@ -32,12 +29,10 @@ export class AppComponent implements OnInit {
     this.onResizeBrowser();
     translate.setDefaultLang('en');
     translate.use('pl');
-    this.production = environment.production;
   }
 
   ngOnInit() {
     this.router.events.subscribe(event => {
-      console.log(event);
       if (event instanceof NavigationEnd) {
         this.route = event?.url;
         this.showShell = this.activatedRoute.firstChild.snapshot.data.showShell !== false;

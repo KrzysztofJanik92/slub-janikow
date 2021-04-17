@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-title',
-  templateUrl: './title.component.html',
-  styleUrls: ['./title.component.scss']
+  selector: 'app-page-under-construction',
+  templateUrl: './page-under-construction.component.html',
+  styleUrls: ['./page-under-construction.component.scss']
 })
-export class TitleComponent implements OnInit {
+export class PageUnderConstructionComponent implements OnInit {
   daysToWedding: number;
 
   constructor() { }
