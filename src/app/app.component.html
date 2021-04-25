@@ -1,27 +1,27 @@
-<!--<div class="layout-wrapper" *ngIf="showShell" [style.overflow]="hiddenScrollbar ? 'hidden' : 'auto'">-->
+<div class="layout-wrapper" *ngIf="showShell" [style.overflow]="hiddenScrollbar ? 'hidden' : 'auto'">
 
-<!--  <div class="content" [style.height]="setContentHeight()">-->
-<!--    <ng-container>-->
-<!--      <div class="inner-content">-->
-<!--        <app-lang></app-lang>-->
-<!--        <app-title></app-title>-->
-<!--        <app-navbar></app-navbar>-->
-<!--        <div style="position: relative">-->
-<!--          <mat-progress-bar style="position: absolute; top: 0"-->
-<!--                            *ngIf="loading" color="accent" mode="indeterminate">-->
-<!--          </mat-progress-bar>-->
-<!--          <div class="container">-->
-<!--            <img src="assets/images/photo1.jpg" [class.blur]="loading">-->
-<!--          </div>-->
-<!--          <div style="position: absolute; top: 0; width: 100%; height: 100%">-->
-<!--            <router-outlet *ngIf="!loading"></router-outlet>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </ng-container>-->
-<!--  </div>-->
-<!--</div>-->
+  <div class="content" [style.height]="setContentHeight()">
+    <ng-container>
+      <div class="inner-content">
+        <app-lang></app-lang>
+        <app-title></app-title>
+        <app-navbar></app-navbar>
+        <div style="position: relative">
+          <mat-progress-bar style="position: absolute; top: 0"
+                            *ngIf="loading" color="accent" mode="indeterminate">
+          </mat-progress-bar>
+          <div class="container">
+            <img src="assets/images/photo1.jpg" [class.blur]="loading">
+          </div>
+          <div style="position: absolute; top: 0; width: 100%; height: 100%">
+            <router-outlet *ngIf="!loading"></router-outlet>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
 
-<!--<router-outlet *ngIf="!showShell"></router-outlet>-->
+<router-outlet *ngIf="!showShell"></router-outlet>
 
-<app-page-under-construction></app-page-under-construction>
+<!--<app-page-under-construction></app-page-under-construction>-->
