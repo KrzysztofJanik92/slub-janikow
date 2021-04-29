@@ -1,0 +1,26 @@
+<div class="container" *ngIf="!isShown">
+  <img src="assets/images/burger-menu.svg" (click)="toggleMenu()">
+</div>
+
+<div class="menu" *ngIf="isShown">
+  <div class="close-icon-container">
+    <img src="assets/images/close.svg" (click)="toggleMenu()">
+  </div>
+  <div class="item" routerLink="/home" [routerLinkActive]="'active'" (click)="toggleMenu()">
+    Strona główna
+  </div>
+  <div class="item" routerLink="/about" [routerLinkActive]="'active'" (click)="toggleMenu()">
+    Zaręczyny
+  </div>
+  <div class="item" routerLink="/wedding" [routerLinkActive]="'active'" (click)="toggleMenu()">
+    Wesele & Kontakt
+  </div>
+  <div class="item" routerLink="/photos" [routerLinkActive]="'active'" (click)="toggleMenu()">
+    Zdjęcia
+  </div>
+  <div >
+    <button (click)="logout()" class="logout">
+      <span class="item">{{'navbar.logout' | translate}}</span>
+    </button>
+  </div>
+</div>

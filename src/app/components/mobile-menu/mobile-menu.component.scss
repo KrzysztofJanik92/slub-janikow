@@ -1,0 +1,81 @@
+@import "../../../styles";
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 0 32px 48px 32px;
+}
+
+.container {
+  padding: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.close-icon-container {
+  padding: 16px 0 0 0;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logout {
+  border: none;
+  color: $dark;
+  background-color: $white;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.item {
+  font-family: MoonTime-Regular;
+  font-size: 28px;
+  cursor: pointer;
+  transition: .3s all;
+  outline: none;
+}
+
+.item:hover {
+  color: $gold;
+}
+
+.active {
+  color: $gold;
+  cursor: auto;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 32px;
+
+  img {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: portrait) {
+  .container {
+    display: flex;
+  }
+}
+
+@media only screen and (max-device-width: 568px) and (orientation: portrait) {
+
+}
