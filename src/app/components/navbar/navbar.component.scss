@@ -4,14 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
   width: 100%;
   height: 64px;
   background-color: $white;
-  //border-bottom: 1px solid $gold;
-  //position: fixed;
-  //top: 0;
-  //box-shadow: 0 10px 30px rgba($gold, .3);
   box-sizing: border-box;
 }
 
@@ -26,7 +21,7 @@
 
 .item {
   font-family: MoonTime-Regular;
-  font-size: 36px;
+  font-size: 28px;
   cursor: pointer;
   transition: .3s all;
   outline: none;
@@ -38,5 +33,25 @@
 
 .active {
   color: $gold;
-  cursor: none;
+  cursor: auto;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 32px;
+
+  img {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: portrait) {
+  .container {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 568px) and (orientation: portrait) {
+
 }

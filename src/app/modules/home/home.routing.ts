@@ -3,6 +3,7 @@ import {NgModule} from "@angular/core";
 import {HomeComponent} from "./home.component";
 import {AboutComponent} from "./pages/about/about.component";
 import {PhotosComponent} from "./pages/photos/photos.component";
+import {WeddingComponent} from "./pages/wedding/wedding.component";
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'photos',
     component: PhotosComponent
+  },
+  {
+    path: 'wedding',
+    component: WeddingComponent
   }
 ];
 

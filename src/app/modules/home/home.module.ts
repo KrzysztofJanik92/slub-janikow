@@ -5,6 +5,7 @@ import {ControlsModule} from "../controls/controls.module";
 import {HomeRouting} from "./home.routing";
 import { AboutComponent } from './pages/about/about.component';
 import { PhotosComponent } from './pages/photos/photos.component';
+import { WeddingComponent } from './pages/wedding/wedding.component';
 
 
 
@@ -12,7 +13,8 @@ import { PhotosComponent } from './pages/photos/photos.component';
   declarations: [
     HomeComponent,
     AboutComponent,
-    PhotosComponent
+    PhotosComponent,
+    WeddingComponent
   ],
   imports: [
     SharedModule,

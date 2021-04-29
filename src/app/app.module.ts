@@ -13,6 +13,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from "@angular/common/http";
 import { LangComponent } from './components/lang/lang.component';
 import { PageUnderConstructionComponent } from './components/page-under-construction/page-under-construction.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PageUnderConstructionComponent } from './components/page-under-construc
     NavbarComponent,
     TitleComponent,
     LangComponent,
-    PageUnderConstructionComponent
+    PageUnderConstructionComponent,
+    FooterComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,

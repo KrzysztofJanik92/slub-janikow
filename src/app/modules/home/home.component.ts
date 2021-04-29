@@ -11,6 +11,8 @@ import {
   Router,
   RouterEvent
 } from "@angular/router";
+import {User} from "../core/models/user.model";
+import {ParagraphsEnum} from "../core/models/enums/paragraphs.enum";
 
 @Component({
   selector: 'app-home',
@@ -18,12 +20,16 @@ import {
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  paragraphs = ParagraphsEnum;
   showShell = false;
   hiddenScrollbar = false;
   loading: boolean;
+  currentUser: User;
+  daysToWedding: number;
 
   constructor(private router: Router,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,
+              private authService: AuthService) {
     // this.loaderOnRouteChange(500);
   }
 
@@ -34,6 +40,20 @@ export class HomeComponent implements OnInit {
         this.hiddenScrollbar = this.activatedRoute.firstChild.snapshot.data.hiddenScrollbar === true;
       }
     });
+
+    this.setDaysToWedding();
+
+    this.currentUser = this.authService.currentUserValue;
+    console.log(this.currentUser);
+  }
+
+  setDaysToWedding() {
+    const today = new Date();
+    const weddingDate = new Date(2021, 6, 31);
+
+    const difference = weddingDate.getTime() - today.getTime();
+
+    this.daysToWedding = Math.ceil(difference / (1000 * 3600 * 24));
   }
 
   private loaderOnRouteChange(delay: number) {
