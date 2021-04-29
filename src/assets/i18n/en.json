@@ -5,7 +5,7 @@
   },
   "navbar": {
     "mainPage": "Home",
-    "about": "About us",
+    "engagement": "Engagement",
     "photos": "Photos",
     "contact": "Contact",
     "logout": "Log out"

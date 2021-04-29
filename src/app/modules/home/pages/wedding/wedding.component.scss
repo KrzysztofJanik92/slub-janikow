@@ -1,4 +1,4 @@
-@import "../../../styles";
+@import "../../../../../styles";
 
 .title {
   font-family: MoonTime-Regular;
@@ -19,8 +19,8 @@ p {
   flex-wrap: wrap;
 }
 
-.paragraph {
-  width: 50%;
+.paragraph1 {
+  width: 60%;
   padding-right: 24px;
   box-sizing: border-box;
   line-height: 1.8;
@@ -39,8 +39,8 @@ p {
   line-height: 1.8;
 }
 
-.photo {
-  width: 50%;
+.photo1 {
+  width: 40%;
 
   img {
     width: 100%;
@@ -52,13 +52,14 @@ p {
 }
 
 @media only screen and (max-device-width: 900px) and (orientation: portrait) {
-  .paragraph,
+  .paragraph1,
   .paragraph2,
   .paragraph3 {
     width: 100%;
+    padding: 0;
   }
 
-  .photo {
+  .photo1 {
     width: 100%;
   }
 
@@ -77,4 +78,3 @@ p {
 @media only screen and (max-device-width: 568px) and (orientation: portrait) {
 
 }
-

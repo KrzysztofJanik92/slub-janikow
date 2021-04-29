@@ -1,3 +1,23 @@
+<div class="container">
+  <div class="content">
+    <div class="paragraph">
+      <h2 class="title">{{currentUser?.greetings}}</h2>
 
+      <p>{{currentUser.paragraph1 ? currentUser.paragraph1 : paragraphs.PARAGRAPH1}}</p>
+      <p>{{currentUser?.paragraph2 ? currentUser?.paragraph2 : paragraphs.PARAGRAPH2}}</p>
+      <p>{{currentUser?.paragraph3}}
+      </p>
 
+      <p>
+        Milena & Krzysztof
+      </p>
+    </div>
 
+    <div class="photo">
+      <img [src]="'assets/images/' + currentUser.photo" *ngIf="currentUser.photo; else default">
+      <ng-template #default>
+        <img [src]="'assets/images/photo1.jpg'">
+      </ng-template>
+    </div>
+  </div>
+</div>
