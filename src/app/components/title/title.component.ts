@@ -23,7 +23,7 @@ export class TitleComponent implements OnInit {
     const daysToWedding = Math.ceil(difference / (1000 * 3600 * 24));
 
     if (daysToWedding > 1) {
-      this.daysToWedding = `Jescze ${daysToWedding} dni!`
+      this.daysToWedding = `Jeszcze ${daysToWedding} dni!`
     } else if (daysToWedding === 1) {
       this.daysToWedding = 'To już jutro!'
     } else if (daysToWedding === 0) {
