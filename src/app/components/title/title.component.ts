@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit {
-  daysToWedding: number;
+  daysToWedding: string;
 
   constructor() { }
 
@@ -20,7 +20,17 @@ export class TitleComponent implements OnInit {
 
     const difference = weddingDate.getTime() - today.getTime();
 
-    this.daysToWedding = Math.ceil(difference / (1000 * 3600 * 24));
+    const daysToWedding = Math.ceil(difference / (1000 * 3600 * 24));
+
+    if (daysToWedding > 1) {
+      this.daysToWedding = `Jescze ${daysToWedding} dni!`
+    } else if (daysToWedding === 1) {
+      this.daysToWedding = 'To już jutro!'
+    } else if (daysToWedding === 0) {
+      this.daysToWedding = 'To już dziś!'
+    } else if (daysToWedding < 1) {
+      this.daysToWedding = 'Dziękujemy za wspaniałe wesele!'
+    }
   }
 
 }
