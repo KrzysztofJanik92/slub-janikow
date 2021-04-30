@@ -71,9 +71,16 @@ export class LoginComponent implements OnInit {
 
   private _filter(value: string): User[] {
     const filterValue = value.toLowerCase();
+    const results = [];
 
-    return this.guests.filter(guest => guest.name.toLowerCase().indexOf(filterValue) === 0
-      || guest.surname.toLowerCase().indexOf(filterValue) === 0)
+    this.guests.forEach((guest: User) => {
+      if (guest.name.toLowerCase().indexOf(filterValue) > -1
+      || guest.surname.toLowerCase().indexOf(filterValue) > -1 ) {
+        results.push(guest);
+      }
+    });
+
+    return results;
   }
 
 }

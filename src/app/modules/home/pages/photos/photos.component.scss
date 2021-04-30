@@ -1,12 +1,69 @@
 @import "../../../../../styles";
 
+.title {
+  font-family: MoonTime-Regular;
+  font-size: 34px;
+  font-weight: 300;
+  margin: 0 0 32px 0;
+  color: $dark;
+}
+
 p {
   font-size: .9rem;
   margin: 0 0 2rem 0;
   color: $dark;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paragraph1 {
+  width: 60%;
+  padding-right: 24px;
+  box-sizing: border-box;
+  line-height: 1.8;
+}
+
+.paragraph2 {
+  width: 60%;
+  padding-left: 24px;
+  box-sizing: border-box;
+  line-height: 1.8;
+}
+
+.paragraph3 {
+  margin: 32px 0;
+  box-sizing: border-box;
+  line-height: 1.8;
+}
+
+.photo1 {
+  width: 40%;
+
+  img {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-device-width: 900px) and (orientation: portrait) {
+  .paragraph1,
+  .paragraph2,
+  .paragraph3 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .photo1 {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 28px;
+  }
+
   p {
     font-size: .8rem;
     margin: 0 0 1rem 0;

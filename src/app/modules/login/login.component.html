@@ -1,12 +1,12 @@
 <div class="container">
-  <form class="left" [formGroup]="fg" >
+  <form class="left" [formGroup]="fg" [autocomplete]>
     <div class="login-container">
       <div class="label-container">
         <span class="label" [@valueChanged]="label">{{label | translate}}</span>
       </div>
       <mat-form-field class="input-container">
         <input
-          placeholder="Wybierz użytkownika"
+          placeholder="Wyszukaj swoje imię lub nazwisko"
           aria-label="Number"
           matInput
           formControlName="name"
@@ -44,7 +44,7 @@
         </div>
 
         <div class="fancy-button-cover" (click)="login()">
-          <span>Login</span>
+          <span>Zaloguj się</span>
         </div>
       </div>
     </div>
