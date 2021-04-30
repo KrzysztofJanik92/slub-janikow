@@ -12,7 +12,7 @@ export const guests: User[] = [
     id: 1001,
     name: 'Paula',
     surname: 'Józefowicz',
-    password: 'jebacpalikota123!',
+    password: 'Pau789!',
     greetings: 'To ona - Nasza Kurowa!',
     photo: 'kuce.png',
     paragraph1: 'Bez Ciebie by się nie udało! Juz prościej byłoby to ogarnąć bez Kyla!',
