@@ -92,5 +92,130 @@ export const guests: User[] = [
     paragraph1: 'Na wstępie chcemy zaznaczyć, że jest nam bardzo miło, że przybędziecie na nasz ślub i wesele (odmowy nie akceptujemy!).',
     paragraph2: 'Bez ulubionej siostry i ulubionego szwagra taka impreza nie może się odbyć!',
     paragraph3: 'Mamy nadzieje, że na tym weselu poczujemy się trochę tak jak na Korfu :D'
+  },
+  {
+    id: 10008,
+    name: 'Alicja i Tomasz',
+    surname: 'Strus',
+    password: 'Strus123!',
+    greetings: 'Drodzy Alicjo i Tomku'
+  },
+  {
+    id: 10009,
+    name: 'Anna i Mariusz',
+    surname: 'Dziewulscy',
+    password: 'Królik19',
+    greetings: 'Drodzy mamo i tato',
+    paragraph1: 'Z głębi serca dziękuję Wam za wszystkie dni, które wspólnie przeżyliśmy.',
+    paragraph2: 'Jesteśmy Wam wdzięczni za każdą pogodną chwilę, za miłość, uśmiech, dobrą radę... To dzięki Wam spotkamy się na tym weselu.',
+    paragraph3: 'Już niedługo nasza rodzina powiększy się o dodatkową osobę - Krzyśka. Ale Wy i tak juz dawno przyjęliście go w Wasze progi.'
+  },
+  {
+    id: 100010,
+    name: 'Monika i Marcin',
+    surname: 'Janik',
+    password: '1Nowehaslo',
+    greetings: 'Drodzy mamo i tato',
+    paragraph1: 'Przede wszystkim dzięki Wam, ten ślub i wesele stanie się faktem, za co chcielibyśmy serdecznie podziękować!',
+    paragraph2: 'Już za chwile Milena stanie się formalnie Janikiem, ja przestanę być wolnym człowiekiem, a babcia może nawet przestanie mnie pytać o magisterkę.',
+    paragraph3: 'Mamy nadzieje, że będziecie się wspaniale bawić na tej imprezie, a wspomnienie tego wydarzenia bedzię z nami już do końca życia. Bardzo Was kochamy, i cieszymy się, że razem  znami spędzicie ten magiczny czas!'
+  },
+  {
+    id: 100011,
+    name: 'Joanna i Marcin',
+    surname: 'Pala',
+    password: 'CiociaAsia',
+    greetings: 'Drodzy Asiu i Marcinie'
+  },
+  {
+    id: 100012,
+    name: 'Danuta i Andrzej',
+    surname: 'Michalczuk',
+    password: 'Sarnów14',
+    greetings: 'Drodzy Danuto i Andrzeju'
+  },
+  {
+    id: 100013,
+    name: 'Danuta i Andrzej',
+    surname: 'Michalczuk',
+    password: 'Sarnów14',
+    greetings: 'Drodzy Danuto i Andrzeju'
+  },
+  {
+    id: 100014,
+    name: 'Ewa i Waldek',
+    surname: 'Sawczuk',
+    password: 'WujekWaldek1',
+    greetings: 'Drodzy Ewo i Waldku'
+  },
+  {
+    id: 100015,
+    name: 'Aneta i Konrad',
+    surname: 'Sawiccy',
+    password: 'Maciek123!',
+    greetings: 'Drodzy Aneto i Konradzie'
+  },
+  {
+    id: 100016,
+    name: 'Zosia Pietrusiewicz',
+    surname: 'Marcin Michalczuk',
+    password: 'MarcinZosia1',
+    greetings: 'Drodzy Zosiu i Marcinie'
+  },
+  {
+    id: 100017,
+    name: 'Urszula i Andrzej',
+    surname: 'Chojnaccy',
+    password: 'Majster14',
+    greetings: 'Drodzy babciu i dziadku'
+  },
+  {
+    id: 100018,
+    name: 'Urszula i Krzysztof',
+    surname: 'Poreda',
+    password: 'Poreda123!',
+    greetings: 'Drodzy Urszulo i Krzysztofie'
+  },
+  {
+    id: 100019,
+    name: 'Małgorzata',
+    surname: 'Dobkiewicz',
+    password: 'Mia55',
+    greetings: 'Droga Małgorzato'
+  },
+  {
+    id: 100020,
+    name: 'Anna i Marek',
+    surname: 'Poreda',
+    password: 'MarekAnia21',
+    greetings: 'Drodzy Anno i Marku'
+  },
+  {
+    id: 100021,
+    name: 'Ewelina i Marcin',
+    surname: 'Poreda',
+    password: 'MarcinEwelina99',
+    greetings: 'Drodzy Ewelino i Marcinie'
+  },
+  {
+    id: 100022,
+    name: 'Renata i Andrzej',
+    surname: 'Boreczek',
+    password: 'Renata94!',
+    greetings: 'Drodzy Renato i Andrzeju'
+  },
+  {
+    id: 100023,
+    name: 'Kasia i Przemek',
+    surname: 'Isańscy',
+    password: 'KasiaPrzemek12',
+    greetings: 'Drodzy Kasiu i Przemku'
+  },
+  {
+    id: 100024,
+    name: 'Sandra Olechowicz',
+    surname: 'Mateusz Dziewulski',
+    password: 'illumaeti2000',
+    greetings: 'Drodzy Sandro i Mateuszu'
   }
 ]
