@@ -70,7 +70,7 @@ export class LoginComponent implements OnInit {
   }
 
   private _filter(value: string): User[] {
-    const filterValue = value.toLowerCase();
+    const filterValue = value.toLowerCase().trim();
     const results = [];
 
     this.guests.forEach((guest: User) => {
