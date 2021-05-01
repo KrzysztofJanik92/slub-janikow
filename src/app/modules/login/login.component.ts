@@ -74,8 +74,7 @@ export class LoginComponent implements OnInit {
     const results = [];
 
     this.guests.forEach((guest: User) => {
-      if (guest.name.toLowerCase().indexOf(filterValue) > -1
-      || guest.surname.toLowerCase().indexOf(filterValue) > -1 ) {
+      if ((`${guest.name} ${guest.surname}`).toLowerCase().indexOf(filterValue) > -1) {
         results.push(guest);
       }
     });
