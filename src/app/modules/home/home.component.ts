@@ -44,7 +44,6 @@ export class HomeComponent implements OnInit {
     this.setDaysToWedding();
 
     this.currentUser = this.authService.currentUserValue;
-    console.log(this.currentUser);
   }
 
   setDaysToWedding() {
