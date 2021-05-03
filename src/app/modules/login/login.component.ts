@@ -4,8 +4,7 @@ import {guests} from "../core/guests/guests.const";
 import {AuthService} from "../core/services/auth.service";
 import {LoginLabelEnum} from "../core/models/login-label.enum";
 import {AbstractControl, FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {animate, keyframes, style, transition, trigger, useAnimation} from "@angular/animations";
-import {hideAnimation, showAnimation} from "../core/animations/animations";
+import {animate, keyframes, style, transition, trigger} from "@angular/animations";
 import {map, startWith} from "rxjs/operators";
 import {Observable} from "rxjs";
 
