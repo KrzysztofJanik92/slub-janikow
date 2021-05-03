@@ -23,12 +23,9 @@ export class AppComponent implements OnInit {
   }
 
   constructor(private router: Router,
-              private activatedRoute: ActivatedRoute,
-              private translate: TranslateService) {
+              private activatedRoute: ActivatedRoute) {
     this.loaderOnRouteChange(500);
     this.onResizeBrowser();
-    translate.setDefaultLang('en');
-    translate.use('pl');
   }
 
   ngOnInit() {

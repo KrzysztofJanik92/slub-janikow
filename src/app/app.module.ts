@@ -30,14 +30,6 @@ import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.compon
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(AppRoutes, {scrollPositionRestoration: 'enabled'}),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-      defaultLanguage: 'pl'
-    }),
     CoreModule,
     MaterialModule
   ],
