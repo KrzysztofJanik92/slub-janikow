@@ -210,5 +210,68 @@ export const guests: User[] = [
     surname: 'Mateusz Dziewulski',
     password: 'illumaeti2000',
     greetings: 'Drodzy Sandro i Mateuszu'
+  },
+  {
+    id: 100025,
+    name: 'Alicja i Ryszard',
+    surname: 'Pazur',
+    greetings: 'Drodzy babciu i dziadku',
+    password: 'Dziadkowie1'
+  },
+  {
+    id: 100026,
+    name: 'Beata i Albert',
+    surname: 'Lawenda',
+    greetings: 'Drodzy ciociu i wujku',
+    password: 'Lawenda22'
+  },
+  {
+    id: 100027,
+    name: 'Magdalena i Grzegorz',
+    surname: 'Mitrut',
+    greetings: 'Siema Mitrutki!',
+    password: 'Mitra!!!'
+  },
+  {
+    id: 100028,
+    name: 'Edyta Królik',
+    surname: 'Adam Hnatów',
+    greetings: 'Drodzy Edyto i Adamie',
+    password: 'MOLON-LABE'
+  },
+  {
+    id: 100029,
+    name: 'Wiktoria i Piotr',
+    surname: 'Daniel',
+    greetings: 'Drodzy Wiktorio i Piotrze',
+    password: 'WiktoriaPiotr1'
+  },
+  {
+    id: 100030,
+    name: 'Jola i Lenek',
+    surname: 'Frąk',
+    greetings: 'Drodzy ciociu i wujku',
+    password: 'JolaLenek1'
+  },
+  {
+    id: 10031,
+    name: 'Karol',
+    surname: 'Daniel',
+    greetings: 'Drogi Karolu',
+    password: 'KarolD1'
+  },
+  {
+    id: 10032,
+    name: 'Karolina i Łukasz',
+    surname: 'Górscy',
+    greetings: 'Witam szanownych przyjaciół z Wiednia',
+    password: 'powazneHasloDoSystemu1'
+  },
+  {
+    id: 10033,
+    name: 'Anastasia Stoll',
+    surname: 'Dawid Taszkun',
+    greetings: 'Witam szanownego Pana basisito-wokaliste wraz z Panią Anastasią',
+    password: 'ForSeveralMoments1'
   }
 ]

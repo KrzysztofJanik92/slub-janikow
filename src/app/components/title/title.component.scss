@@ -23,6 +23,16 @@
   margin: 12px 0 0 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .names {
+    font-size: 52px;
+  }
+
+  .info {
+    font-size: 13px;
+  }
+}
+
 @media only screen and (max-device-width: 900px) and (orientation: portrait) {
   .container {
     padding: 16px 0 0px;
