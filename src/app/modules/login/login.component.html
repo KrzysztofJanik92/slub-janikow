@@ -15,8 +15,8 @@
                           autoActiveFirstOption
                           (optionSelected)="selectUser($event)"
                           [displayWith]="displayProperty">
-          <mat-option *ngFor="let guest of filteredOptions | async" [value]="guest">
-            {{guest.name}} {{guest.surname}}
+          <mat-option *ngFor="let guest of filteredOptions | async; let i = index" [value]="guest">
+            {{i + 1}}. {{guest.name}} {{guest.surname}}
           </mat-option>
         </mat-autocomplete>
 
