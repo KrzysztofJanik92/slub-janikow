@@ -273,5 +273,12 @@ export const guests: User[] = [
     surname: 'Dawid Taszkun',
     greetings: 'Witam szanownego Pana basisito-wokaliste wraz z Panią Anastasią',
     password: 'ForSeveralMoments1'
-  }
+  },
+  {
+    id: 10034,
+    name: 'Michał',
+    surname: 'Lawenda',
+    greetings: 'Drogi Michale',
+    password: 'MichałL1'
+  },
 ]
