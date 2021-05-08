@@ -271,7 +271,7 @@ export const guests: User[] = [
     id: 10033,
     name: 'Anastasia Stoll',
     surname: 'Dawid Taszkun',
-    greetings: 'Witam szanownego Pana basisito-wokaliste wraz z Panią Anastasią',
+    greetings: 'Witam szanownego Pana basisto-wokalistę wraz z Panią Anastasią',
     password: 'ForSeveralMoments1'
   },
   {
@@ -281,4 +281,60 @@ export const guests: User[] = [
     greetings: 'Drogi Michale',
     password: 'MichałL1'
   },
+  {
+    id: 10034,
+    name: 'Filip',
+    surname: 'Laskowski',
+    greetings: 'Drogi Filipie',
+    password: 'skonopi_92'
+  },
+  {
+    id: 10035,
+    name: 'Beata Pszczołowska',
+    surname: 'Piotr Niwiński',
+    greetings: 'Drodzy Beato i Piotrze',
+    password: 'RealMadrid1'
+  },
+  {
+    id: 10036,
+    name: 'Justyna Przewrocka',
+    surname: 'Mateusz Janik',
+    greetings: 'Drodzy Justyno i Mateuszu',
+    password: 'Ignacy2020'
+  },
+  {
+    id: 10037,
+    name: 'Małgorzata Zięba',
+    surname: 'Seweryn Niewiadomoski',
+    greetings: 'Drodzy Małgosiu i Sewerynie',
+    password: 'GosiaSeweryn123!'
+  },
+  {
+    id: 10037,
+    name: 'Jarosław',
+    surname: 'Zięba',
+    greetings: 'Drogi Jarku',
+    password: 'Jarek99!'
+  },
+  {
+    id: 10038,
+    name: 'Sylwia i Łukasz',
+    surname: 'Zięba',
+    greetings: 'Drodzy Sylwio i Łukaszu',
+    password: 'Ziębowie234!'
+  },
+  {
+    id: 10039,
+    name: 'Barbara i Mirosław',
+    surname: 'Zięba',
+    greetings: 'Drodzy Basiu i Mirku',
+    password: 'Ziębowie1'
+  },
+  {
+    id: 10040,
+    name: 'Krystyna i Robert',
+    surname: 'Przewroccy',
+    greetings: 'Drodzy Krysiu i Robercie',
+    password: 'Przewroccy1'
+  }
 ]
