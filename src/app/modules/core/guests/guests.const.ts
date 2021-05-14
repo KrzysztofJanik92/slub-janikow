@@ -350,5 +350,61 @@ export const guests: User[] = [
     surname: 'Polichańczuk',
     greetings: 'Drodzy Ado i Kacprze',
     password: 'AdaxKacper'
+  },
+  {
+    id: 10043,
+    name: 'Elżbieta',
+    surname: 'Dziewulska',
+    greetings: 'Droga babciu',
+    password: 'BabciaEla'
+  },
+  {
+    id: 10044,
+    name: 'Kamila i Kamil',
+    surname: 'Kościesza',
+    greetings: 'Drodzy Kamilo i Kamilu',
+    password: 'Kamila4Kamil'
+  },
+  {
+    id: 10045,
+    name: 'Asia i Radek',
+    surname: 'Pietrak',
+    greetings: 'Drodzy Asiu i Radku',
+    password: '99Pietrak'
+  },
+  {
+    id: 10046,
+    name: 'Karolina',
+    surname: 'Pietrak',
+    greetings: 'Droga Karolino',
+    password: 'Karolina97'
+  },
+  {
+    id: 10047,
+    name: 'Julia',
+    surname: 'Pietrak',
+    greetings: 'Droga Julio',
+    password: 'JuliaP'
+  },
+  {
+    id: 10048,
+    name: 'Aleksandra i Piotr',
+    surname: 'Szwajczewscy',
+    greetings: 'Drodzy Aleksandro i Piotrze',
+    password: 'OlaPiotrek99'
+  },
+  {
+    id: 10049,
+    name: 'Amelia i Iga',
+    surname: 'Szwajczewskie',
+    greetings: 'Drogie Amelko i Igo',
+    password: 'Siostry'
+  },
+  {
+    id: 10050,
+    name: 'Katarzyna i Artur',
+    surname: 'Dula',
+    greetings: 'Drodzy Katarzyno i Arturze',
+    password: 'Dula2021'
   }
 ]
