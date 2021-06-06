@@ -550,8 +550,8 @@ export const guests: User[] = [
   {
     id: 10069,
     name: 'Anna',
-    surname: 'Krawczyk',
+    surname: 'Książek',
     greetings: 'Droga Anno',
-    password: 'AKrawczyk1'
+    password: 'AKsiążek1'
   }
 ]
