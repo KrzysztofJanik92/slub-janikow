@@ -546,5 +546,12 @@ export const guests: User[] = [
     surname: 'Damian Lawenda',
     greetings: 'Drodzy Gosiu i Damianie',
     password: 'GosiaDamian1'
+  },
+  {
+    id: 10069,
+    name: 'Anna',
+    surname: 'Krawczyk',
+    greetings: 'Droga Anno',
+    password: 'AKrawczyk1'
   }
 ]
