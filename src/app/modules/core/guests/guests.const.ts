@@ -415,13 +415,6 @@ export const guests: User[] = [
     password: 'Morrison1'
   },
   {
-    id: 10052,
-    name: 'Milena Dankiewicz',
-    surname: 'Tomasz Arciszewski',
-    greetings: 'Drodzy Mileno i Tomaszu',
-    password: 'Liverpool2021'
-  },
-  {
     id: 10053,
     name: 'Angelika Salus',
     surname: 'Łukasz Karwowski',
@@ -595,5 +588,17 @@ export const guests: User[] = [
     surname: 'Kondzior',
     greetings: 'Drodzy Agato i Danielu',
     password: 'AgataDaniel1'
+  },
+  {
+    id: 10076,
+    name: 'Milena Dankiewicz',
+    surname: 'Tomasz Arciszewski',
+    greetings: 'Drodzy Mileno i Tomaszu',
+    password: 'Liverpool2021',
+    paragraph1: 'Na wstępie chcemy zaznaczyć, że jest nam bardzo miło, że przybędziecie na nasz ślub i wesele (odmowy nie akceptujemy!).',
+    paragraph2: 'Z Tomaszem przyjaźnie się już prawie 13 lat (niewątpliwie samodzielny rekordzista!). ' +
+      'Razem przeżyliśmy wiele szalonych chwil, wyjazdów, imprez i turniejów w Fifę. Ponadto zawsze w trudnych chwilach był dla mnie nieocenionym wsparciem. ' +
+    'Z Mileną znamy sie krótko ale czujemy, że to będzie świetna znajomość. Od pierwszego wejrzenia widać, że jesteśćie bardzo udaną parą.',
+    paragraph3: 'Mamy nadzieje, że już wkrótce będziemy się razem świetnie bawić!'
   }
 ]
