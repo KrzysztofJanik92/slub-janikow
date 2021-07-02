@@ -600,5 +600,12 @@ export const guests: User[] = [
       'Razem przeżyliśmy wiele szalonych chwil, wyjazdów, imprez i turniejów w Fifę. Ponadto zawsze w trudnych chwilach był dla mnie nieocenionym wsparciem. ' +
     'Z Mileną znamy sie krótko ale czujemy, że to będzie świetna znajomość. Od pierwszego wejrzenia widać, że jesteśćie bardzo udaną parą.',
     paragraph3: 'Mamy nadzieje, że już wkrótce będziemy się razem świetnie bawić!'
+  },
+  {
+    id: 10077,
+    name: 'Paulina Kursa-Konieczna',
+    surname: 'Mateusz Konieczny',
+    greetings: 'Drodzy Paulino i Mateuszu',
+    password: 'Pajka94'
   }
 ]
