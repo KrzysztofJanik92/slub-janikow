@@ -412,7 +412,14 @@ export const guests: User[] = [
     name: 'Paulina Kuberska',
     surname: 'Wiktor Małek',
     greetings: 'Siema Paulo-Wiktusy',
-    password: 'Morrison1'
+    password: 'Morrison1',
+    paragraph1: 'Wiktus - moja prawa ręka, człowiek od zadań specjalnych, specjalista od wszystkiego, ' +
+      'muzyk, mechanik, eletryk, elektronik, programista, alkoholowy akrobata, no i w końcu - mój świadek!',
+    paragraph2: 'Paula - piękna i inteligentna partnerka Wiktusa, wspaniała wokalistka, uzdolniona programistka, grafik i ' +
+      'specjalista od nagrań video.',
+    paragraph3: 'Gdybym mógł wziąć na świadka kogo chce, wziąłbym Leonardo da Vinci. Z racji, że nie żyje od jakiegos czasu, to Wy ' +
+      'jesteście najbliżej jego możliwości. Myśle, że razem zrobimy kosmiczną impreze!',
+    photo: 'wiktusy.jpg'
   },
   {
     id: 10053,
